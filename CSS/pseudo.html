@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+    <h1>Focus</h1>
+    <div id="myData">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <br><br>
+
+        <label for="">Gender</label>
+        <br><br>
+
+        <input type="radio" value="Male" id="male" name="gender">
+        <label for="male">Male</label>
+        <input type="radio" value="Female" id="female" name="gender">
+        <label for="female">Female</label>
+        <br><br>
+
+        <label for="">English Skills Proficiency</label>
+        <br>
+
+        <div>
+            <input type="checkbox" name="english[]" value="Listening" id="listening">
+            <label for="listening">Listening</label>
+        </div>
+        <div>
+            <input type="checkbox" name="english[]" value="Reading" id="reading">
+            <label for="reading">Reading</label>
+        </div>
+        <div>
+            <input type="checkbox" name="english[]" value="Writing" id="writing">
+            <label for="writing">Writing</label>
+        </div>
+        <div>
+            <input type="checkbox" name="english[]" value="Speaking" id="speaking" disabled>
+            <label for="speaking">Speaking</label>
+        </div>
+        <br><br>
+
+        <div>
+            <label for="EName">English Name</label>
+            <input type="text" value="Chuck" id="EName" readonly>
+        </div>
+    </div>
+</body>
+</html>
