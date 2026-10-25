@@ -1,0 +1,19 @@
+h1{
+    color: red;
+    text-align: center;
+}
+
+/* Float */
+.float_right{
+    width: 20%;
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+
+.float_left{
+    width: 20%;
+    float: left;
+}

@@ -1,0 +1,58 @@
+h1{
+    color: red;
+    text-align: center;
+}
+
+/* Margin */
+
+#marginOne{
+    border: 1px solid black;
+    /* margin: 50px; */
+    /* Top Right Bottom Left */
+    /* margin: 40px 0; */
+    /* Top & Bottom / Left & Right */
+    /* margin: 40px 100px 0; */
+    /* Top / Left & Right / Bottom */
+    margin: 100px 50px 0 10px;
+    /* Top / Right / Bottom / Left */
+}
+
+#marginTwo{
+    margin-bottom: 100px;
+}
+
+/* Padding */
+
+.paddingOne{
+    border: 1px solid red;
+    /* padding: 100px 75px 50px 25px; */
+    padding-top: 10px;
+}
+
+/* Border */
+.borderOne{
+    /* border: 50px solid green; */
+    border-left: 30px solid red;
+}
+
+.borderTwo{
+    border-style: dashed dotted solid double;
+    border-color: blue red;
+    border-width: 20px 10px;
+}
+
+/* Layout */
+
+.block{
+    border: 1px solid red;
+    width: 400px;
+    height: 40px;
+    display: inline-block;
+}
+
+.inline{
+    border: 1px solid black;
+    width: 400px;
+    height: 40px;
+    display: inline-block;
+}
