@@ -77,10 +77,13 @@ span, #remember{
     text-decoration: none;
 }
 
-a, #forget{
-    text-align: right;
+a{
     text-decoration: none;
     color: blueviolet;
+}
+
+#forget{
+    margin-left: 255px;
 }
 
 #forget:hover{
