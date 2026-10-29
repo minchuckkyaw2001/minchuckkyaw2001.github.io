@@ -5,6 +5,9 @@
 
 body {
     background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .form-container, div{
     background-color: white;
@@ -80,6 +83,16 @@ a, #forget{
     color: blueviolet;
 }
 
+#forget:hover{
+    color: rgb(88, 27, 145);
+    text-decoration: underline;
+}
+
+a:hover{
+    color: rgb(88, 27, 145);
+    text-decoration: underline;
+}
+
 button {
     background-color: blueviolet;
     color: white;
@@ -89,5 +102,10 @@ button {
     border-radius: 5px;
     margin-bottom: 15px;
     border-style: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(88, 27, 145);
     cursor: pointer;
 }
