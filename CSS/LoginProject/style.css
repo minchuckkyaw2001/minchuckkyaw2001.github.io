@@ -32,7 +32,7 @@ h2{
     text-align: left;
 }
 
-p, span{
+p, span, label{
     font-size: 16px;
     margin: 3px;
     text-align: center;
@@ -68,13 +68,13 @@ input[type="password"]{
     outline: none;
 }
 
-a, #remember{
+span, #remember{
     margin-bottom: 15px;
     text-align: center;
     text-decoration: none;
 }
 
-a #forget{
+a, #forget{
     text-align: right;
     text-decoration: none;
     color: blueviolet;
