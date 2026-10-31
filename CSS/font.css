@@ -1,0 +1,20 @@
+h1{
+    text-align: center;
+    color: red;
+}
+
+/* Font */
+.online-font{
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "One";
+    src: url(../CSS/Playwrite_TZ_Guides/PlaywriteTZGuides-Regular.ttf);
+}
+
+.offline-font{
+    font-family: "One";
+}

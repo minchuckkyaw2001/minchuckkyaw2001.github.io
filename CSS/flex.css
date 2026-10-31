@@ -1,0 +1,15 @@
+/* flex */
+h1{
+    text-align: center;
+    color: red;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.flex div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
