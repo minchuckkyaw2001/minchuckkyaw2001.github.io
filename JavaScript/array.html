@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1>Array Lesson</h1>
+    <script>
+        let studentList = ['Kyaw Kyaw', 'Aung Aung', 'Tun Tun'];
+        console.log(studentList);
+        console.log(studentList.length);
+        console.log(studentList[2]);
+
+        // array.push()
+        studentList.push('Hla Hla');
+        console.log(studentList);
+
+        // array.pop()
+        studentList.pop();
+        console.log(studentList);
+
+        // array.unshift()
+        studentList.unshift('Aye Aye');
+        console.log(studentList);
+
+        // array.shift()
+        studentList.shift();
+        console.log(studentList);
+
+        // sort
+        let studentList1 = ['Kyaw Kyaw', 'Kyaw Thu', 'Aung Aung', 'Hla Hla', 'Aung Htet'];
+        console.log(studentList1);
+
+        studentList1.sort();
+        console.log(studentList1);
+
+        let studentList2 = studentList1.toString();
+        console.log(studentList2);
+
+        // string to array
+        let studentList3 = 'Kyaw Kyaw, Hla Hla, Aung Aung, Tun Tun, Aye Aye';
+        let studentListArray = studentList3.split(',');
+        console.log(studentListArray);
+
+        let numbers = [1,2,3,4,5,6,7,8,9];
+        let letters = ['A','B','C','D','E','F'];
+        let hexa = numbers.concat(letters);
+        console.log(hexa);
+
+        let combinedArray = [...numbers,...letters,...hexa];
+        console.log(combinedArray);
+    </script>
+</body>
+</html>

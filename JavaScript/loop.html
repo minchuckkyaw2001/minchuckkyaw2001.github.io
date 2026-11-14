@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+</head>
+<body>
+    <h1>Loop Lesson</h1>
+    <script>
+        // for loop
+        for(let i=0; i<3; i++){
+            document.write(`<h3>Laptop Lists ${i}</h3>`);
+        }
+        let windowsLaptopList = ['ASUS','DELL','Acer','HP','Lenovo'];
+        for(let i=0; i<windowsLaptopList.length; i++){
+            document.write(`The laptop which runs Windows operating system is ${windowsLaptopList[i]}<br>`);
+        }
+
+        for(let i=0; i<3; i++){
+            for(let a=0; a<=i; a++){
+                document.write("*");
+            }
+            document.write('<br>');
+        }
+
+        // while loop
+        let number1 = parseInt(prompt("Enter a number:"));
+        console.log(number1);
+        
+        while(number1<=100){
+            document.write(`Your number is while loop in ${number1} <br>`);
+            number1+=10;
+        }
+
+        // do while
+        let number2 = parseInt(prompt("Enter a number:"));
+        do{
+            document.write(`Your number is do while loop in ${number2} <br>`);
+            number2+=10;
+        }while(number2<100)
+    </script>
+</body>
+</html>

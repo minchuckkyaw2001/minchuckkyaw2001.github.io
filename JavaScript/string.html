@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <h1>String Lessons</h1>
+    <script>
+        let firstName = "Chuck";
+        let lastName = "Digger";
+        let fullName = `<h3>${firstName} ${lastName}.</h3> I'm 25 years old.`;
+        document.write(fullName);
+
+        let job = "   Intern Developer.   Chuck Digger   ";
+        console.log(job.trim());
+        console.log(job.toUpperCase());
+        console.log(job.toLowerCase());
+
+        let ser = "Intern Developer Chuck Digger";
+        console.log(ser.length);
+
+        console.log(ser.search("Chuck"));
+        console.log(ser.indexOf("Chuck"));
+
+        let rep = "I live in Yangon."
+        console.log(rep);
+        console.log(rep.replace("Yangon", "Naypyidaw"));
+
+        let num = "959,421,206,090";
+        console.log(num);
+        console.log(num.replace(/\,/g,''));
+        document.write("<br>");
+        document.write(`I'm Min Khant Kyaw. 5'6"`);
+    </script>
+</body>
+</html>
