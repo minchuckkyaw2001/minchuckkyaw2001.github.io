@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Timer</title>
+  <style>
+    /* Applying Digit Font */
+    @font-face {
+      font-family: "Digit";
+      src: url("fonts/minisystem.regular.ttf");
+    }
+
+    /* Basic page centering */
+    body {
+      font-family: "Digit";
+      background-color: #121212;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .countdown-container {
+      text-align: center;
+    }
+
+    h1 {
+      font-weight: 400;
+      letter-spacing: 2px;
+      margin-bottom: 2rem;
+    }
+
+    /* Flexbox layout for the time boxes */
+    .timer {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .time-box {
+      background: #1e1e1e;
+      padding: 1.5rem 2rem;
+      border-radius: 10px;
+      min-width: 80px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .time-box span {
+      display: block;
+      font-size: 3rem;
+      font-weight: 700;
+      color: #00d8ff;
+    }
+
+    .time-box p {
+      margin: 0.5rem 0 0;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #aaaaaa;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="countdown-container">
+    <h1 id="headline">Event Starts In</h1>
+    <div class="timer" id="timer">
+      <div class="time-box">
+        <span id="days">00</span>
+        <p>Days</p>
+      </div>
+      <div class="time-box">
+        <span id="hours">00</span>
+        <p>Hours</p>
+      </div>
+      <div class="time-box">
+        <span id="minutes">00</span>
+        <p>Minutes</p>
+      </div>
+      <div class="time-box">
+        <span id="seconds">00</span>
+        <p>Seconds</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 1. Set your target date and time here
+    const targetDate = new Date("January 1, 2027 00:00:00").getTime();
+
+    // 2. Update the countdown every 1 second (1000ms)
+    const countdownInterval = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      // 3. Calculate days, hours, minutes, and seconds
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // 4. Display results (padStart adds a leading zero for single digits)
+      document.getElementById("days").innerText = String(days).padStart(2, "0");
+      document.getElementById("hours").innerText = String(hours).padStart(2, "0");
+      document.getElementById("minutes").innerText = String(minutes).padStart(2, "0");
+      document.getElementById("seconds").innerText = String(seconds).padStart(2, "0");
+
+      // 5. Stop the timer when the countdown finishes
+      if (distance < 0) {
+        clearInterval(countdownInterval);
+        document.getElementById("headline").innerText = "The Event Has Started!";
+        document.getElementById("timer").style.display = "none";
+      }
+    }, 1000);
+  </script>
+
+</body>
+</html>
