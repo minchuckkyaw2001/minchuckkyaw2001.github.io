@@ -1,25 +1,26 @@
+<!-- This is not a real project. It's just homework. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guess</title>
+    <title>Guess The Number</title>
 </head>
 <body>
     <script>
-        let secretNo = 7;
-        let count = 1;
-        let userNo = Number(prompt("Enter a number between 1 and 10."));
+        let secretNo = 7; // setting secret number
+        let count = 1; // number of attempts
+        let userNo = Number(prompt("Enter a number between 1 and 10.")); // To type the correct number
         while (secretNo != userNo){
             if(userNo < secretNo){
-                alert("Lower, Try Again!");
+                alert("Lower, Try Again!"); // less than the secret number
             }else{
-                alert("Higher, Try Again!");
+                alert("Higher, Try Again!"); // greater than the secret number
             }
-            userNo = Number(prompt("Enter a number between 1 and 10."));
+            userNo = Number(prompt("Enter a number between 1 and 10.")); // if the answer is not correct
             count++;
         }
-        document.write(`<h2>Correct Now! You guessed it in ${count} attempts.</h2>`);
+        document.write(`<h2>Correct Now! You guessed it in ${count} attempts.</h2>`); // if the answer is correct
     </script>
 </body>
 </html>
