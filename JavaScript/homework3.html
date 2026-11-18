@@ -8,6 +8,7 @@
 <body>
     <script>
         let secretNo = 7;
+        let count = 1;
         let userNo = Number(prompt("Enter a number between 1 and 10."));
         while (secretNo != userNo){
             if(userNo < secretNo){
@@ -15,9 +16,10 @@
             }else{
                 alert("Higher, Try Again!");
             }
-            userNo = Number(prompt("Enter a number between 1 and 10."));            
+            userNo = Number(prompt("Enter a number between 1 and 10."));
+            count++;
         }
-        document.write("<h2>Correct Now!</h2>");
+        document.write(`<h2>Correct Now! You guessed it in ${count} attempts.</h2>`);
     </script>
 </body>
 </html>
